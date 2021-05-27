@@ -1,8 +1,8 @@
 <header class="site-header container">
     <div class="header-left">
-        <a class="logo" href="{{@site.url}}">
+        <a class="logo" href="https://www.redeemingproductivity.com/">
             {{#if @site.logo}}
-                <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}"><span class="logo-text">{{@site.title}}</span>
+                <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
             {{else}}
                 <span class="logo-text">{{@site.title}}</span>
             {{/if}}
@@ -32,7 +32,7 @@
             <div class="container">
                 <nav class="mobile-nav">
                     {{navigation}}
-                    {{#if @member}}
+                    {{!-- {{#if @member}}
                         <button class="button-text menu-item members-account" data-portal="account">Account</button>
                         {{#unless @member.paid}}
                             <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
@@ -40,13 +40,13 @@
                     {{else}}
                         <button class="button-text menu-item members-login" data-portal="signin">Login</button>
                         <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
-                    {{/if}}
+                    {{/if}} --}}
                 </nav>
             </div>
         </div>
     {{/if}}
     <div class="header-right hidden-xs hidden-sm hidden-md">
-        {{#if @member}}
+        {{!-- {{#if @member}}
             <button class="button-text menu-item members-account" data-portal="account">Account</button>
             {{#unless @member.paid}}
                 <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
@@ -54,7 +54,7 @@
         {{else}}
             <button class="button-text menu-item members-login" data-portal="signin">Login</button>
             <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
-        {{/if}}
+        {{/if}} --}}
     </div>
 </header>
 
